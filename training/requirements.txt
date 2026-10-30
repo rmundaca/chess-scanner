@@ -1,0 +1,5 @@
+# PC only (not shipped in the NAS package). CPU Torch:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+numpy>=2.0
+pillow>=10.0
+torch>=2.4

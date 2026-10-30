@@ -1,0 +1,5 @@
+[en]
+Chess Scanner is a lightweight self-hosted web app for Asustor NAS. It turns a photo of a chess diagram from a book into a FEN you can paste into Lichess or Chess.com.
+
+[es]
+Chess Scanner es una aplicación web ligera y autohospedada para NAS Asustor. Convierte la foto de un diagrama de ajedrez de un libro en un FEN para pegar en Lichess o Chess.com.

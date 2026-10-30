@@ -1,0 +1,176 @@
+{
+ "format": "chess-scanner-cnn",
+ "format_version": 1,
+ "preprocess_version": 1,
+ "created": "2026-10-17T02:18:00Z",
+ "input": [
+  1,
+  32,
+  32
+ ],
+ "classes": [
+  "",
+  "P",
+  "N",
+  "B",
+  "R",
+  "Q",
+  "K",
+  "p",
+  "n",
+  "b",
+  "r",
+  "q",
+  "k"
+ ],
+ "weights_file": "model.bin",
+ "weights_count": 51717,
+ "sha256": "a0568bb3f7d5fad5b8550038ae3c5d7dcb09ab7bb3dfef119f180c290c85d390",
+ "layers": [
+  {
+   "type": "conv2d",
+   "in": 1,
+   "out": 8,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    0,
+    72
+   ],
+   "bias": [
+    72,
+    8
+   ]
+  },
+  {
+   "type": "conv2d",
+   "in": 8,
+   "out": 8,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    80,
+    576
+   ],
+   "bias": [
+    656,
+    8
+   ]
+  },
+  {
+   "type": "maxpool2d",
+   "size": 2
+  },
+  {
+   "type": "conv2d",
+   "in": 8,
+   "out": 16,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    664,
+    1152
+   ],
+   "bias": [
+    1816,
+    16
+   ]
+  },
+  {
+   "type": "conv2d",
+   "in": 16,
+   "out": 16,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    1832,
+    2304
+   ],
+   "bias": [
+    4136,
+    16
+   ]
+  },
+  {
+   "type": "maxpool2d",
+   "size": 2
+  },
+  {
+   "type": "conv2d",
+   "in": 16,
+   "out": 32,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    4152,
+    4608
+   ],
+   "bias": [
+    8760,
+    32
+   ]
+  },
+  {
+   "type": "conv2d",
+   "in": 32,
+   "out": 32,
+   "kernel": 3,
+   "pad": 1,
+   "relu": true,
+   "weight": [
+    8792,
+    9216
+   ],
+   "bias": [
+    18008,
+    32
+   ]
+  },
+  {
+   "type": "maxpool2d",
+   "size": 2
+  },
+  {
+   "type": "flatten"
+  },
+  {
+   "type": "dense",
+   "in": 512,
+   "out": 64,
+   "relu": true,
+   "weight": [
+    18040,
+    32768
+   ],
+   "bias": [
+    50808,
+    64
+   ]
+  },
+  {
+   "type": "dense",
+   "in": 64,
+   "out": 13,
+   "relu": false,
+   "weight": [
+    50872,
+    832
+   ],
+   "bias": [
+    51704,
+    13
+   ]
+  }
+ ],
+ "metrics": {
+  "epoch": 4,
+  "synthetic_val_acc": 0.999961,
+  "real_val_acc": 0.988281,
+  "real_val_tiles": 256
+ }
+}

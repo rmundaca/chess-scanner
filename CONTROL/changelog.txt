@@ -1,0 +1,17 @@
+0.2.4 (2026-10-30)
+- Prepared for GitHub: English README, code comments and package metadata; MIT license.
+
+0.2.3 (2026-10-18)
+- Chess Scanner update.
+
+0.2.2 (2026-10-18)
+- Chess Scanner update.
+
+0.2.1 (2026-10-18)
+- Chess Scanner update.
+
+0.2.0 (2026-10-16)
+- Automatic in-browser piece recognition, uncertain squares, inferred orientation and model upload from Settings.
+
+0.1.0 (2026-10-16)
+- First release: diagram photo, manual corner adjustment, piece editor, FEN with Lichess and Chess.com links, history and dataset export.

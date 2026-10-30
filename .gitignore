@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Runtime data (SQLite, secrets, logs) and local overrides
+package/data/
+package/config/config.yaml
+*.db
+*.db-shm
+*.db-wal
+*.log
+.env
+.env.*
+
+# Training (PC): datasets (include book photos, not published) and outputs
+training/data/
+training/out/
+training/fonts/
+
+# Build
+dist/
+build/
+*.apk
+*.egg-info/
+
+# Tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# Local-only notes (not published)
+CLAUDE.md
+ASUSTOR_AS202TE_APP_TEMPLATE*.md
+docs/PLAN.md
